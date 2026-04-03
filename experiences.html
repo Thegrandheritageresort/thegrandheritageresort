@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="The Grand Heritage Resort, Agra — Luxury Heritage Hotel near Taj Mahal">
+<title>Experiences — The Grand Heritage Resort Agra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <div class="nav-logo-crest">
+      <img src="Images/Navlogo.png" alt="The Grand Heritage Resort logo" class="nav-logo-crest-img">
+    </div>
+    <div>
+      <div class="nav-logo-text">THE GRAND HERITAGE</div>
+      <div class="nav-logo-sub">Resort · Agra, India</div>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" id="nav-home">Home</a></li>
+    <li><a href="stay.html" id="nav-stay">Stay</a></li>
+    <li><a href="experiences.html" id="nav-exp"  class="active">Experiences</a></li>
+    <li><a href="gallery.html" id="nav-gallery">Gallery</a></li>
+    <li><a href="contact.html" id="nav-contact">Contact</a></li>
+  </ul>
+  <a href="https://wa.me/918318305276?text=Hello%20I%20want%20to%20book%20a%20room%20at%20The%20Grand%20Heritage%20Resort" target="_blank" rel="noopener" class="nav-cta"><span>Book Now</span></a>
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation">
+  <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+  <a href="index.html" onclick="closeMobile()">Home</a>
+  <div class="mob-divider"></div>
+  <a href="stay.html" onclick="closeMobile()">Stay</a>
+  <div class="mob-divider"></div>
+  <a href="experiences.html" onclick="closeMobile()">Experiences</a>
+  <div class="mob-divider"></div>
+  <a href="gallery.html" onclick="closeMobile()">Gallery</a>
+  <div class="mob-divider"></div>
+  <a href="contact.html" onclick="closeMobile()">Contact</a>
+  <div class="mob-divider"></div>
+  <a href="https://wa.me/918318305276?text=Hello%20I%20want%20to%20book%20a%20room%20at%20The%20Grand%20Heritage%20Resort" target="_blank" rel="noopener" class="mob-book" onclick="closeMobile()">Book Now</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background:linear-gradient(135deg,#0D0500,#3D1500,#0D0500);"></div>
+  <div class="page-hero-pattern"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content sr">
+    <span class="hero-lbl">Curated for You</span>
+    <h1>Curated Experiences</h1>
+  </div>
+</section>
+
+<section class="sig-exp">
+  <div class="sig-inner">
+    <div class="sr" style="text-align:center;">
+      <span class="section-label">Beyond Ordinary</span>
+      <h2 class="section-title">Moments Crafted for You</h2>
+      <div class="section-divider center"></div>
+      <p style="color:#7A6A5A;max-width:520px;margin:0 auto;font-size:.87rem;line-height:1.85;font-weight:300;">At The Grand Heritage Resort, every moment is an opportunity to create an enduring memory that you will tell for generations.</p>
+    </div>
+    <div class="sig-grid">
+      <div class="sig-card  sr" data-tilt>
+  <div class="sig-bg" style="background:linear-gradient(135deg,#3D1500,#7A3510);"></div>
+  <div class="sig-overlay"></div>
+  <div class="sig-content">
+    <span class="sig-icon">🕯</span>
+    <div class="sig-name">Candlelit Romantic Dinner</div>
+    <div class="sig-desc">Dine beneath a canopy of stars in our private garden terrace. Chef-crafted Mughlai delicacies, live sitar music, and a rose-petal setting create the perfect overture to your love story.</div>
+    <a href="https://wa.me/918318305276?text=Hello%20I%20want%20to%20book%20a%20room%20at%20The%20Grand%20Heritage%20Resort" target="_blank" rel="noopener" class="sig-link">Reserve a Table →</a>
+  </div>
+</div>
+      <div class="sig-card  sr" data-tilt>
+  <div class="sig-bg" style="background:linear-gradient(135deg,#1A0800,#4A2800);"></div>
+  <div class="sig-overlay"></div>
+  <div class="sig-content">
+    <span class="sig-icon">🎭</span>
+    <div class="sig-name">Cultural Heritage Evening</div>
+    <div class="sig-desc">An immersive evening of Kathak dance, Qawwali music, and Mughlai storytelling. Dress in traditional attire, enjoy chai and mithai, and let Agra's living heritage envelop you.</div>
+    <a href="https://wa.me/918318305276?text=Hello%20I%20want%20to%20book%20a%20room%20at%20The%20Grand%20Heritage%20Resort" target="_blank" rel="noopener" class="sig-link">Book Experience →</a>
+  </div>
+</div>
+      <div class="sig-card  sr" data-tilt>
+  <div class="sig-bg" style="background:linear-gradient(135deg,#0A1A0A,#2A4A1A);"></div>
+  <div class="sig-overlay"></div>
+  <div class="sig-content">
+    <span class="sig-icon">🕌</span>
+    <div class="sig-name">Curated Heritage Tours</div>
+    <div class="sig-desc">Private guided excursions to the Taj Mahal at sunrise, Agra Fort, Fatehpur Sikri and beyond — with expert historians who bring the Mughal era vividly to life.</div>
+    <a href="https://wa.me/918318305276?text=Hello%20I%20want%20to%20book%20a%20room%20at%20The%20Grand%20Heritage%20Resort" target="_blank" rel="noopener" class="sig-link">Enquire Now →</a>
+  </div>
+</div>
+      <div class="sig-card  sr" data-tilt>
+  <div class="sig-bg" style="background:linear-gradient(135deg,#0D0D2B,#1A2A4A);"></div>
+  <div class="sig-overlay"></div>
+  <div class="sig-content">
+    <span class="sig-icon">💆</span>
+    <div class="sig-name">Royal Spa & Wellness</div>
+    <div class="sig-desc">Ancient Ayurvedic wisdom meets modern healing. Our therapists craft bespoke treatments using rare botanicals, precious oils, and time-honoured techniques.</div>
+    <a href="https://wa.me/918318305276?text=Hello%20I%20want%20to%20book%20a%20room%20at%20The%20Grand%20Heritage%20Resort" target="_blank" rel="noopener" class="sig-link">Book Spa →</a>
+  </div>
+</div>
+      <div class="sig-card sig-card-full sr" data-tilt>
+  <div class="sig-bg" style="background:linear-gradient(135deg,#2A0A00,#6B3010,#2A0A00);"></div>
+  <div class="sig-overlay"></div>
+  <div class="sig-content">
+    <span class="sig-icon">💍</span>
+    <div class="sig-name">Weddings & Grand Celebrations</div>
+    <div class="sig-desc">Your wedding deserves a setting as extraordinary as your love. From intimate garden ceremonies to grand banquets in our palatial halls — we orchestrate every detail with flawless grace.</div>
+    <a href="https://wa.me/918318305276?text=Hello%20I%20want%20to%20book%20a%20room%20at%20The%20Grand%20Heritage%20Resort" target="_blank" rel="noopener" class="sig-link">Plan Your Wedding →</a>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+<section class="wedding-section">
+  <div class="wedding-inner">
+    <div class="wedding-img sr sr-left" data-tilt>
+      <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="rgba(212,175,55,.38)" stroke-width=".8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+    </div>
+    <div class="wedding-text sr sr-right">
+      <span class="section-label">Celebrations</span>
+      <h2 class="section-title light">Your Dream Wedding<br>in a Royal Setting</h2>
+      <div class="section-divider left"></div>
+      <p>The Grand Heritage Resort is among Agra's most sought-after wedding destinations. Our palatial architecture, manicured gardens, and dedicated events team create the backdrop for celebrations spoken of for generations.</p>
+      <div class="pkg-list">
+        <div class="pkg-item">Grand Banquet Hall for up to 500 guests</div>
+        <div class="pkg-item">Heritage Garden Ceremonies & Mehendi</div>
+        <div class="pkg-item">In-house décor, catering and entertainment</div>
+        <div class="pkg-item">Bridal suite with luxury getting-ready package</div>
+        <div class="pkg-item">Professional photography referrals</div>
+      </div>
+      <a href="https://wa.me/918318305276?text=Hello%20I%20want%20to%20book%20a%20room%20at%20The%20Grand%20Heritage%20Resort" target="_blank" rel="noopener" class="btn-gold">Plan Your Celebration</a>
+    </div>
+  </div>
+</section>
+
+<section class="culture-section">
+  <div class="culture-inner">
+    <div class="sr" style="text-align:center;">
+      <span class="section-label">A Day at The Grand Heritage</span>
+      <h2 class="section-title">Your Perfect Day, Curated</h2>
+      <div class="section-divider center"></div>
+    </div>
+    <div class="timeline">
+      <div class="tl-item sr"><div class="tl-text"><div class="tl-time">6:00 AM</div><div class="tl-title">Sunrise Yoga & Chai</div><div class="tl-desc">Begin with guided yoga on our heritage rooftop, followed by freshly brewed masala chai.</div></div><div class="tl-icon-wrap"><div class="tl-icon">🌅</div></div></div>
+      <div class="tl-item right sr sr-d1"><div class="tl-text"><div class="tl-time">8:00 AM</div><div class="tl-title">Taj Mahal at Sunrise</div><div class="tl-desc">Private transport to witness the Taj at its most ethereal — golden light on white marble.</div></div><div class="tl-icon-wrap"><div class="tl-icon">🕌</div></div></div>
+      <div class="tl-item sr sr-d2"><div class="tl-text"><div class="tl-time">1:00 PM</div><div class="tl-title">Royal Mughlai Feast</div><div class="tl-desc">A lavish lunch of dum biryanis, kebabs and saffron desserts in our heritage dining hall.</div></div><div class="tl-icon-wrap"><div class="tl-icon">🍽</div></div></div>
+      <div class="tl-item right sr sr-d3"><div class="tl-text"><div class="tl-time">4:00 PM</div><div class="tl-title">Spa & Rejuvenation</div><div class="tl-desc">An Ayurvedic massage at our Royal Spa, followed by time in the heated pool.</div></div><div class="tl-icon-wrap"><div class="tl-icon">💆</div></div></div>
+      <div class="tl-item sr sr-d4"><div class="tl-text"><div class="tl-time">8:00 PM</div><div class="tl-title">Starlit Gala Dinner</div><div class="tl-desc">A private candlelit dinner in the courtyard under a thousand stars with live classical music.</div></div><div class="tl-icon-wrap"><div class="tl-icon">🕯</div></div></div>
+    </div>
+  </div>
+</section>
+
+<a href="https://wa.me/918318305276?text=Hello%20I%20want%20to%20book%20a%20room%20at%20The%20Grand%20Heritage%20Resort" target="_blank" rel="noopener" class="float-wa" aria-label="WhatsApp Booking"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand footer-col">
+      <div style="font-family:'Cinzel',serif;font-size:1.05rem;color:var(--gold);letter-spacing:2px;">THE GRAND HERITAGE RESORT</div>
+      <div style="font-size:.55rem;letter-spacing:3px;color:rgba(212,175,55,.48);margin-top:.35rem;text-transform:uppercase;">Agra, India</div>
+      <p>An architectural masterpiece where the grandeur of Mughal heritage blends with contemporary luxury. Every corner tells a story of timeless elegance.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul><li><a href="index.html">Home</a></li><li><a href="stay.html">Our Rooms</a></li><li><a href="experiences.html">Experiences</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Experiences</h4>
+      <ul><li><a href="experiences.html">Romantic Dining</a></li><li><a href="experiences.html">Cultural Evenings</a></li><li><a href="experiences.html">Weddings & Events</a></li><li><a href="experiences.html">Wellness & Spa</a></li><li><a href="experiences.html">Heritage Tours</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Near Taj Mahal Expressway<br>Agra, UP 282001, India</p><br>
+      <p>📞 +91 83183 05276</p><p>✉ reservations@grandheritage.in</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 The Grand Heritage Resort, Agra. All rights reserved.</span>
+    <span>Crafted with <span class="footer-gold">♥</span> for timeless luxury</span>
+  </div>
+</footer>
+<script src="script.js" defer></script>
+<script>
+(function(){var el=document.getElementById('nav-exp');if(el)el.classList.add('active');})();
+</script>
+</body>
+</html>
