@@ -292,21 +292,38 @@ body.menu-open .hamburger {
 /* ----------------------------------------------------------------
    8. FLOATING WHATSAPP — FIX position, size, no overlap
    ---------------------------------------------------------------- */
-.float-wa {
+.float-cta-group {
   position: fixed; bottom: 1.5rem; right: 1.5rem;
-  z-index: 9990; width: 52px; height: 52px;
-  background: #25D366; border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
+  z-index: 9990;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.float-wa, .float-call {
+  position: relative; width: 52px; height: 52px;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  transition: transform .3s var(--ease-spring), box-shadow .3s;
+}
+.float-wa {
+  background: #25D366;
   box-shadow: 0 4px 18px rgba(37,211,102,.4);
   animation: waFloat 3s ease-in-out infinite;
-  transition: transform .3s var(--ease-spring), box-shadow .3s;
+}
+.float-call {
+  background: var(--gold);
+  box-shadow: 0 4px 18px rgba(212,175,55,.4);
+  animation: waFloat 3s ease-in-out infinite;
+  animation-delay: 1.5s;
 }
 .float-wa:hover {
   transform: scale(1.15) translateY(-3px) !important;
   animation: none;
   box-shadow: 0 8px 32px rgba(37,211,102,.55), 0 0 0 6px rgba(37,211,102,.12);
 }
-.float-wa svg { width: 26px; height: 26px; fill: #fff; }
+.float-call:hover {
+  transform: scale(1.15) translateY(-3px) !important;
+  animation: none;
+  box-shadow: 0 8px 32px rgba(212,175,55,.55), 0 0 0 6px rgba(212,175,55,.12);
+}
+.float-wa svg, .float-call svg { width: 26px; height: 26px; fill: #fff; }
 @keyframes waFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
 @keyframes waPulse {
   0%  { box-shadow: 0 4px 18px rgba(37,211,102,.4), 0 0 0 0 rgba(37,211,102,.25); }
@@ -1070,9 +1087,10 @@ footer { background:#0D0804;color:var(--ivory);padding:5rem 3rem 2rem;border-top
   /* Contact form */
   .form-row { grid-template-columns: 1fr; }
   .contact-section { padding: 4.5rem 1.4rem; }
-  /* Float WA */
-  .float-wa { width: 46px; height: 46px; bottom: 1.2rem; right: 1.2rem; }
-  .float-wa svg { width: 22px; height: 22px; }
+  /* Float CTAs */
+  .float-cta-group { bottom: 1.2rem; right: 1.2rem; gap: 10px; }
+  .float-wa, .float-call { width: 46px; height: 46px; }
+  .float-wa svg, .float-call svg { width: 22px; height: 22px; }
   /* Page hero */
   .page-hero { height: 46vh; min-height: 300px; padding-bottom: 3.5rem; }
   /* Lightbox nav */
